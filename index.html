@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Bell | Today's Best Deals</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: #ffff !important;
+            }
+
+            .container {
+                width: 100%;
+            }
+
+            .hero-img {
+                width: 100%;
+            }
+
+            .cravings_box-table {
+                width: 100%;
+                padding: 0 0 40px 0 !important;
+            }
+
+            .burrito-table {
+                width: 100%;
+            }
+
+            .chalupa-table {
+                width: 100%;
+                padding: 0 0 40px 10px !important;
+            }
+
+            .crunchwrap-table {
+                width: 100%;
+                padding: 0 0 0 15px !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: grey;">
+    <table id="wrapper" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <td>
+                <table style="background-color: #ffff;" class="container" width="600" align="center" cellspacing="0"
+                    cellpadding="0" border="0">
+                    <tr>
+                        <td>
+                            <table class="nav-table" width="100%" cellspacing="0" cellpadding="0" border="0"
+                                align="left">
+                                <tr>
+                                    <td align="center">
+                                        <p style="font-size: 14px;">Nacho Fries with Vegan* Nacho Sauce. Try it today.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table width="90%" cellspacing="0" cellpadding="0" align="center" border="0">
+                                            <tr>
+                                                <td align="center">
+                                                    <a style="text-decoration: none; color: black; font-size: 14px;"
+                                                        href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfP12q9IruttJN19-PSe1DCxeztKsGyIBgRQ2e-DV6waTH2v-tkD6wh21Kk2oIOEh-0a_ACkhhEq-EJCH_Sb0PlC8Qgv1epXAQlxbjsNBkzWZCGoROiBOI6ydoahyX4Vep9WBIMVXfBfFDfBvS3qejQ6uFAf1qPub_j_utq2woVHwAqoYtmP0xo-u02UedaJKl4HyG0EDA4kcIqBJXE-DFutQwZl-zMDJ922BqX82K1h3zoyU4F_EfJzzc_Z7glrx3CUVDhUbh5yZoQFAF3I8IjLmj8ZJruc6NfHxfEPBG8Nw/40d/VzXvFg7qTT-XV2qxpKrPjQ/h21/2CNfG-DXp-FqrCYcvm-FPJEebyOeSrDmjJWVWm_SMkw"
+                                                        target="_blank">Menu</a>
+                                                </td>
+                                                <td align="center">
+                                                    <a style="text-decoration: none; color: black; font-size: 14px;"
+                                                        href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfP12q9IruttJN19-PSe1DCzNsSWdROVxFG9gLl0KdkRgL8s6B7uC0cPV372pJTrK4QqEnvNTRy6GoVzz_VHdD5ZovLsxgJ2eTA8ljIORtnSo62wZzAs-jlDQ60ncdo1JjuWQxxjSgmAay2z0XsYKX9oaWZJMcWAu2lj1BVaibt4r4Z3GvnwBxoroYogydq3D6xi4kjYlAt63Ba9ag-XSK889aYW7tpeHNBM1Ghr7H_FCp6ntzhi3dCU-jhmDOm-1oL2fWEOssReaSbOS1LoOFD26c-tRx4i8snVuOKbzKnCX4hRUW6gLcxnRXMtjfrmzaw/40d/VzXvFg7qTT-XV2qxpKrPjQ/h22/q099x8P6dQvC-WLUgZqdbnY38DxMj3Vd1q4Qg0SpqY4"
+                                                        target="_blank">Locations</a>
+                                                </td>
+                                                <td align="center">
+                                                    <a href="https://tacobell.com" target="_blank"><img class="logo-img"
+                                                            src="./images/logo.png" alt="Taco Bell Logo" /></a>
+                                                </td>
+                                                <td align="center">
+                                                    <a style="text-decoration: none; color: black; font-size: 14px;"
+                                                        href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfP12q9IruttJN19-PSe1DCy7UbNwgqnh3kny5y4eigr5_hHYnWf4s1Q-IE-dSYf-tAMiMso1AqijClCM6iuq0dJWDWOgpz3p7LZxwKtIg5NB9QYXnRXmo0LMSpWaj_gkINRIHWg3Ze7xVzHyXByEcCP2g3xWvkLZMtxkgmuHA3shRmOr1VUOIeFiNmhlflUjaCXip2auRWHmEtjYw9b_X8ZUNRoJbNANue1OD-tJB9voCJjTw1cwBrQIhjIcn0bnvvRNL4wNllt_PPwAgubfz6e9YCB1bgXYgHMvXX0LmkrNT0BEbuN1NLQMILuofsbCqQ/40d/VzXvFg7qTT-XV2qxpKrPjQ/h25/Tu2gW3VaSsS4G-722Zb3hKLdmROCzw6OfxsVDL2NfjI"
+                                                        target="_blank">Delivery</a>
+                                                </td>
+                                                <td align="center">
+                                                    <a style="text-decoration: none; color: black; font-size: 14px;"
+                                                        href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfP12q9IruttJN19-PSe1DCwTgUawVCaxOKhg82w9_AKmbIHg8L6FK-d5LtLZ2KoL8YvqkSzG7RINUDY4MrlUmnAnIzWWY5AszGz8lDHxcYp0zggXq-joUEbBiLNADC1t-K0PEEqZq3VcA8Qc-gGlIsf3LL6C6jw9VzDlGhdAhW_VtYk9Uc5aJ7Z4yBZf460Qv25HepOJEYRf0Bvxm_O8zWl196ljMFreDFRzGakNYmGktOM-JLUjnMVJU5fkx2Civzx6hv-eKcAylrRcleIF9speZeyIWxozWh_oNOH2OaRzVm5x_PgHDsOplcg5MMFPIw/40d/VzXvFg7qTT-XV2qxpKrPjQ/h26/mhJk54zLDUhuSpNF2oNY0mpVjgGrQGzlKePCVTCjS94"
+                                                        target="_blank">Rewards</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="hero-table" width="100%" cellspacing="0" cellpadding="0" align="left"
+                                border="0">
+                                <tr>
+                                    <td align="center" style="padding: 20px 0 0;">
+                                        <a href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfP12q9IruttJN19-PSe1DCxfCb67P2Fo6iBx9xsLTGkTkxG5_wemeA5d7WCrCYWrpVr2gDSRFS_hCUHWtTBWoZ3FX_wJDEzobMygprxUuVLTTGvJpeaEKP5sKrW-JYeVUbV7rgfFvSstnUec47q21bm6A1VRGpdi3hXzAOcUClQKS1A0MZ7u4XdwNpYbWf2relKf9Iem4SxinrA1_AakR-z0adHLr3gm7FyNn-xqUdTKpj4kDBlKmaZF_lf2IZS9geLyRUBbDU9DLT-sllCgBuLUD17PSMCfV3iRJYb7c19aXK-_t5NIB1yx2w4c0H_zPBP0ouwQCHW25lMeptgp_XI/40d/VzXvFg7qTT-XV2qxpKrPjQ/h27/kTFqZqzOlO4zG9DjsMeq0e040vziIGq15PXNRHFw7bs"
+                                            target="_blank"><img class="hero-img" src="./images/hero.png"
+                                                alt="New Dip Flavor" /></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <h2 style="margin-bottom: 5px; font-size: 28px;">Dip into Flavor</h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <p style="font-size: 16px;">Starting today, try Nacho Fries with Vegan* Nacho
+                                            Sauce while supplies last.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding: 15px 0 0;">
+                                        <button style="background-color: #8B39ED; border: none; padding: 15px 50px;"><a
+                                                style="text-decoration: none; color: #ffff; font-weight: bold; font-size: 16px;"
+                                                href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfP12q9IruttJN19-PSe1DCxfCb67P2Fo6iBx9xsLTGkTkxG5_wemeA5d7WCrCYWrpTFJMGskajeUVayrgtJeSAZfwxJHY-pC8d-AzzBehV23KBbxmVO5RyDpBQL7SEHfGtndB_p-YQtYqcImXJ027zbqJDiGd_8cV2yuFZVCsiRNkjXiSY9dI46FowihIHs97UyQd-zRq290Ek3KVkyXjHOs3pmalF3OmEqiRP7XI4CUbGelXRT8-bOjkc_AzN_8hKIXFTIG3_RiAwe-Ln_g-ILwfkNRv4hPG80wIBGvi5DQfu1UaaI-iYegEyxOiV-sQNwk9HFdxH9tZYv9KFinCLc/40d/VzXvFg7qTT-XV2qxpKrPjQ/h29/oNT7OFFHcTPxBMmhA5BRT7_5bzOZId261jkGwSozR1A"
+                                                target="_blank">Order Now</a></button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table style="padding: 80px 10px 0;" class="main_content-table" width="100%" cellspacing="0"
+                                cellpadding="0" align="center" border="0">
+                                <tr>
+                                    <td align="center">
+                                        <h2 style="font-size: 28px;">So Many Options. Which Will<br /> You Choose?</h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 25px 0 0;">
+                                        <table style="padding: 0 10px 0 0;" class="cravings_box-table" width="50%"
+                                            cellspacing="0" cellpadding="0" align="left" border="0">
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfP12q9IruttJN19-PSe1DCwQHRFelmPXqydPqx0eZGomEF9cUMmJVkvBDqnSb7gvDeywD_hhZ4v6icqKCsvMfzgz7o5LlJC3wVrXC-bIugzYu617hVR1RwJV5XHCeapikAjyKdV9D5_litgEOEdhzDnKmKt6_PCyN7kokuzWWQp2HPFUeFxEdgu-DzrKl_WRJG2A3h8Vc9TU5FEjLqoycIXKmvHXp5H4RaW2Q1m8r4EsnlX-fD0Jy1iX25NZup1RjSzrF6xx9sjqMoBxHllc4xwHIrrF4yANRGHI0gYnikxEwy5d8D8Gydu-8AueXamC_CvakgSyszbQ0IeUQBZtuIhOFR0eNWuaPVv-oBT67fLBagPaJAPdlaKMFrQT06scSg/40d/VzXvFg7qTT-XV2qxpKrPjQ/h30/cimAffK-9F-a48XMWgaYklKTQYXsOQQTcSL98r6tXe4"
+                                                        target="_blank"><img src="./images/box.png"
+                                                            alt="cravings box" /></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding: 5px 0 15px;">
+                                                    <p style="font-weight: 600;">Build Your Own Cravings Box</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfP12q9IruttJN19-PSe1DCwQHRFelmPXqydPqx0eZGomEF9cUMmJVkvBDqnSb7gvDeywD_hhZ4v6icqKCsvMfzgz7o5LlJC3wVrXC-bIugzYGYUqc15IZQxNdsyESgv8x3-sXDL_uEQZiBMlrJnIWRRn2q8jNUOADHv0AZla2lpgvDoiSfBoX0brAFPgagGy8Rz6wJB2K5f9wQycNvgfK8g5irz-TRYOdpCennVAHPRioL4lBsYaZoesbP7anfjD8U0D-aZhutjeTdsFG6PJtQXSyPMTBnHDU7XhWHsjgTwxiAFxy0p-rm8Q4hnQ-Ftf54aT4_SrIw58rPQFcjMn910OUjtV3T8karqfGA_dr1kKCuqdu_Xy1cnhjEkyWEc42w/40d/VzXvFg7qTT-XV2qxpKrPjQ/h31/YEyD-4tdO6SYf5XA86pI6GZev6-ClFzJJpDoR6tj4A0"
+                                                        target="_blank"><button
+                                                            style="background-color: #EA42D1; color: #ffff; border: none; font-weight: bold; padding: 15px 50px; font-size: 16px">Order
+                                                            Now</button></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table style="padding: 0 0 0 10px;" class="burrito-table" width="50%"
+                                            cellspacing="0" cellpadding="0" align="left" border="0">
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfP12q9IruttJN19-PSe1DCwQHRFelmPXqydPqx0eZGomEF9cUMmJVkvBDqnSb7gvDeywD_hhZ4v6icqKCsvMfzgz7o5LlJC3wVrXC-bIugzYu617hVR1RwJV5XHCeapikAjyKdV9D5_litgEOEdhzDnKmKt6_PCyN7kokuzWWQp2HPFUeFxEdgu-DzrKl_WRJG2A3h8Vc9TU5FEjLqoycIXKmvHXp5H4RaW2Q1m8r4EsnlX-fD0Jy1iX25NZup1RjSzrF6xx9sjqMoBxHllc4xwHIrrF4yANRGHI0gYnikxEwy5d8D8Gydu-8AueXamC_CvakgSyszbQ0IeUQBZtuIhOFR0eNWuaPVv-oBT67fLBagPaJAPdlaKMFrQT06scSg/40d/VzXvFg7qTT-XV2qxpKrPjQ/h30/cimAffK-9F-a48XMWgaYklKTQYXsOQQTcSL98r6tXe4"
+                                                        target="_blank"><img src="./images/burrito.png"
+                                                            alt="beefy 5 layer burrito" /></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding: 5px 0 15px;">
+                                                    <p style="font-weight: 600;">Beefy 5-Layer Burrito</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfP12q9IruttJN19-PSe1DCwQHRFelmPXqydPqx0eZGomEF9cUMmJVkvBDqnSb7gvDeywD_hhZ4v6icqKCsvMfzgz7o5LlJC3wVrXC-bIugzYGYUqc15IZQxNdsyESgv8x3-sXDL_uEQZiBMlrJnIWRRn2q8jNUOADHv0AZla2lpgvDoiSfBoX0brAFPgagGy8Rz6wJB2K5f9wQycNvgfK8g5irz-TRYOdpCennVAHPRioL4lBsYaZoesbP7anfjD8U0D-aZhutjeTdsFG6PJtQXSyPMTBnHDU7XhWHsjgTwxiAFxy0p-rm8Q4hnQ-Ftf54aT4_SrIw58rPQFcjMn910OUjtV3T8karqfGA_dr1kKCuqdu_Xy1cnhjEkyWEc42w/40d/VzXvFg7qTT-XV2qxpKrPjQ/h31/YEyD-4tdO6SYf5XA86pI6GZev6-ClFzJJpDoR6tj4A0"
+                                                        target="_blank"><button
+                                                            style="background-color: #EA42D1; color: #ffff; border: none; font-weight: bold; padding: 15px 50px; font-size: 16px">Order
+                                                            Now</button></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 60px 0 0;">
+                                        <table style="padding: 0 10px 0 0;" class="chalupa-table" width="50%"
+                                            cellspacing="0" cellpadding="0" align="left" border="0">
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfP12q9IruttJN19-PSe1DCwQHRFelmPXqydPqx0eZGomEF9cUMmJVkvBDqnSb7gvDeywD_hhZ4v6icqKCsvMfzgz7o5LlJC3wVrXC-bIugzYu617hVR1RwJV5XHCeapikAjyKdV9D5_litgEOEdhzDnKmKt6_PCyN7kokuzWWQp2HPFUeFxEdgu-DzrKl_WRJG2A3h8Vc9TU5FEjLqoycIXKmvHXp5H4RaW2Q1m8r4EsnlX-fD0Jy1iX25NZup1RjSzrF6xx9sjqMoBxHllc4xwHIrrF4yANRGHI0gYnikxEwy5d8D8Gydu-8AueXamC_CvakgSyszbQ0IeUQBZtuIhOFR0eNWuaPVv-oBT67fLBagPaJAPdlaKMFrQT06scSg/40d/VzXvFg7qTT-XV2qxpKrPjQ/h30/cimAffK-9F-a48XMWgaYklKTQYXsOQQTcSL98r6tXe4"
+                                                        target="_blank"><img src="./images/chalupa.png"
+                                                            alt="cravings box" /></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding: 5px 0 15px;">
+                                                    <p style="font-weight: 600;">Chalupa Supreme®</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfP12q9IruttJN19-PSe1DCwQHRFelmPXqydPqx0eZGomEF9cUMmJVkvBDqnSb7gvDeywD_hhZ4v6icqKCsvMfzgz7o5LlJC3wVrXC-bIugzYGYUqc15IZQxNdsyESgv8x3-sXDL_uEQZiBMlrJnIWRRn2q8jNUOADHv0AZla2lpgvDoiSfBoX0brAFPgagGy8Rz6wJB2K5f9wQycNvgfK8g5irz-TRYOdpCennVAHPRioL4lBsYaZoesbP7anfjD8U0D-aZhutjeTdsFG6PJtQXSyPMTBnHDU7XhWHsjgTwxiAFxy0p-rm8Q4hnQ-Ftf54aT4_SrIw58rPQFcjMn910OUjtV3T8karqfGA_dr1kKCuqdu_Xy1cnhjEkyWEc42w/40d/VzXvFg7qTT-XV2qxpKrPjQ/h31/YEyD-4tdO6SYf5XA86pI6GZev6-ClFzJJpDoR6tj4A0"
+                                                        target="_blank"><button
+                                                            style="background-color: #EA42D1; color: #ffff; border: none; font-weight: bold; padding: 15px 50px; font-size: 16px">Order
+                                                            Now</button></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table style="padding: 0 0 0 10px;" class="crunchwrap-table" width="50%"
+                                            cellspacing="0" cellpadding="0" align="left" border="0">
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfP12q9IruttJN19-PSe1DCwQHRFelmPXqydPqx0eZGomEF9cUMmJVkvBDqnSb7gvDeywD_hhZ4v6icqKCsvMfzgz7o5LlJC3wVrXC-bIugzYu617hVR1RwJV5XHCeapikAjyKdV9D5_litgEOEdhzDnKmKt6_PCyN7kokuzWWQp2HPFUeFxEdgu-DzrKl_WRJG2A3h8Vc9TU5FEjLqoycIXKmvHXp5H4RaW2Q1m8r4EsnlX-fD0Jy1iX25NZup1RjSzrF6xx9sjqMoBxHllc4xwHIrrF4yANRGHI0gYnikxEwy5d8D8Gydu-8AueXamC_CvakgSyszbQ0IeUQBZtuIhOFR0eNWuaPVv-oBT67fLBagPaJAPdlaKMFrQT06scSg/40d/VzXvFg7qTT-XV2qxpKrPjQ/h30/cimAffK-9F-a48XMWgaYklKTQYXsOQQTcSL98r6tXe4"
+                                                        target="_blank"><img src="./images/crunchwrap.png"
+                                                            alt="beefy 5 layer burrito" /></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding: 5px 0 15px;">
+                                                    <p style="font-weight: 600;">Crunchwrap Supreme®</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfP12q9IruttJN19-PSe1DCwQHRFelmPXqydPqx0eZGomEF9cUMmJVkvBDqnSb7gvDeywD_hhZ4v6icqKCsvMfzgz7o5LlJC3wVrXC-bIugzYGYUqc15IZQxNdsyESgv8x3-sXDL_uEQZiBMlrJnIWRRn2q8jNUOADHv0AZla2lpgvDoiSfBoX0brAFPgagGy8Rz6wJB2K5f9wQycNvgfK8g5irz-TRYOdpCennVAHPRioL4lBsYaZoesbP7anfjD8U0D-aZhutjeTdsFG6PJtQXSyPMTBnHDU7XhWHsjgTwxiAFxy0p-rm8Q4hnQ-Ftf54aT4_SrIw58rPQFcjMn910OUjtV3T8karqfGA_dr1kKCuqdu_Xy1cnhjEkyWEc42w/40d/VzXvFg7qTT-XV2qxpKrPjQ/h31/YEyD-4tdO6SYf5XA86pI6GZev6-ClFzJJpDoR6tj4A0"
+                                                        target="_blank"><button
+                                                            style="background-color: #EA42D1; color: #ffff; border: none; font-weight: bold; padding: 15px 50px; font-size: 16px">Order
+                                                            Now</button></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table style="padding: 120px 0 0;" class="social_media-table" width="100%" cellspacing="0"
+                                cellpadding="0" border="0" align="left">
+                                <tr>
+                                    <td align="center">
+                                        <a style="padding: 0 10px 0 0;"
+                                            href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfJbQx1htLpnNBqIUmigMxHfMv6kUBM1WVAxEl1O1Ru5Z-Fyoa_jhl-5FOhPzFUnNaA/40d/VzXvFg7qTT-XV2qxpKrPjQ/h38/jCARBDzV0OiQi5akanfmyFctsLZhdHuuV4oRDSe4fNU"><img
+                                                src="./images/facebook.png" alt="facebook icon" /></a>
+                                        <a style="padding: 0 10px 0 0;"
+                                            href="https://link.email.tacobell.com/ss/c/EBPfkXSSXSfhnu20FnCXXdBcupgWU6rlDtNowJuCfg1UnfLFJuuCrqAtmbZj8qbiXGCyIfxmg5_vtOgKtvfhsg/40d/VzXvFg7qTT-XV2qxpKrPjQ/h39/z26fU1pWR8Evkhl-9hi3_Ez4dror7z-ArpU92lRk4ZA"><img
+                                                src="./images/twitter.png" alt="twitter icon" /></a>
+                                        <a style="padding: 0 10px 0 0;"
+                                            href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfFIpG4yc6uuJoX2VacSaVTIm2VLpgup6fkwrM_UQMvOWtUYq-1EoblwoU7sF_hLnkhFMU9ZJthGdEnZ2IpfHrIQ/40d/VzXvFg7qTT-XV2qxpKrPjQ/h40/2HZ8_vcTTtJXyWhmK4k0H17KxVUJodzPMOqmzThcnaM"><img
+                                                src="./images/instagram.png" alt="instagram icon" /></a>
+                                        <a
+                                            href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfDa7meWopACgIJ1XWzt28Ri3h9HMflObpaddI8tJAVc2DNce-DXD5MHtl5RZf73KYNbpiYkNJmrZNNTu6eQ5t8c/40d/VzXvFg7qTT-XV2qxpKrPjQ/h41/15iSUM_D-S20I5fLSSwqzoGluo-GS_nVmdontoUONL4"><img
+                                                src="./images/youtube.png" alt="youtube icon" /></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table style="padding: 30px 0 0;" class="footer-table" width="100%" cellspacing="0"
+                                cellpadding="0" border="0" align="left">
+                                <tr>
+                                    <td align="center">
+                                        <p style="font-size: 10px;">At participating U.S. Taco Bell® locations for a
+                                            limited time only, while
+                                            supplies last. Contact local restaurant for price, participation, and hours
+                                            of operation, which vary. Tax extra.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <p style="font-size: 10px;">*Taco Bell defines “vegan” as containing no animal
+                                            ingredients. It's important to note, however, that in some restaurants we
+                                            use the same frying oil to prepare menu items that may or may not contain
+                                            animal ingredients. Vegan and animal ingredients are handled in common and
+                                            cross-contact may occur. Taco Bell's vegan ingredients are certified by the
+                                            American Vegetarian Association. Neither Taco Bell, our employees, our
+                                            franchisees or the AVA assume any responsibility for such cross-contact.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <p style="font-size: 10px;">American Vegetarian Association certified Vegetarian
+                                            food items and/or items shown in Veggie Mode, are lacto-ovo, allowing
+                                            consumption of dairy and eggs but not animal byproducts. We may use the same
+                                            frying oil to prepare menu items that could contain meat. Vegetarian and
+                                            meat ingredients are handled in common, and cross contact may occur, which
+                                            may not be acceptable to certain types of vegetarian diets. Neither Taco
+                                            Bell®, our employees, nor our franchisees nor the AVA assume any
+                                            responsibility for such cross contact. All beverage-related trademarks are
+                                            owned by PepsiCo, Inc. and its Affiliates and Subsidiaries.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding: 10px 0 0;">
+                                        <p style="font-size: 10px;">©2023 Taco Bell IP Holder, LLC.<br />
+                                            1 Glen Bell Way, Irvine, California 92618</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding: 20px 0;">
+                                        <a href="https://link.email.tacobell.com/ss/c/b9JerWeNdwCuT2Ob06IUfP12q9IruttJN19-PSe1DCyX9VX4FKeUN1zUsuwIuZQ2Ps7CDAHsAsa0WDZspfLdjq_NmCiCDV2kxpmXSiAsQQemW7dbT_kLKXRLspyMR_q9VT-aVHkcGgl266DRHyfusxCr_MRKSKVpbnL0Zdanlc5K889CBt978oT6lSybyTS1yL6fYAIO5xKxA4UspfMvE5EQb2FBvc8R7FomYMdiqDI8mxvaBxv-XgMtGcNVSMH580TS6F4t7WF9MRoXgSgoJaF_dLHDsJ3YY_y8WXUKHvLWON-xirPLga31UWWbFXWvhsmGL52sLZiOWskSs8diYUX2ZZXkSgLqFephXKCa0b8/40d/VzXvFg7qTT-XV2qxpKrPjQ/h42/ZUkloABRJbfdW3COKelNmzDnXDKHkz-OMj9PlaQje3Q"
+                                            style="color: #FF1988; font-size: 10px; padding: 0 10px 0 0;">Privacy
+                                            Policy</a>
+                                        <a href="https://link.email.tacobell.com/ss/c/nuzYMtQPQQ3pzY8QFfJ8qXN2ujkO-rOu8rb1HQODmDd5WwG1Xfkazc_E2dpEnh5MgK1Tb_SKmQHEX6kOf3gF5tgiC0sYxVU9CswinAWyMrHK_7d1nxRhXDl5zU_HVO2ZW-RuwLSHZz80kXyW7WDr5Uy3grlC398cxebYLfipqUZCuf8cxRl6zzbK0fsqNtMWY5ENia5vNEqk67Po0XK8V7Z6vfclXnypTS7IBdmrfAc1vNxx4nfrjGtWdT2exsol9MPMDQsp30iF0fge9WY5YCbbBwAqc1fO9easHYWfCjh6m8oQOcLR5eC3WYhAeJYcWFGvsw3RWtY18qewe4mfrTbMPXWGS-42amk6n5bIO1VNV42jGcM7r_jPoBs4AMkN/40d/VzXvFg7qTT-XV2qxpKrPjQ/h43/xTaAgVHR-rGEefdP1t0bvcxGvhF_c7r84Y2m0-5AK7c"
+                                            style="color: #FF1988; font-size: 10px; padding: 0 0 0 10px;">Unsubcribe</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
